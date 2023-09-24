@@ -5,6 +5,7 @@ import Layout from "../Layout/Layout";
 import DonationPage from "../DonationPage/DonationPage";
 import StatisticsPage from "../StatisticsPage/StatisticsPage";
 import Home from "../HomePage/Home";
+import CardDetails from "../CardDetails/CardDetails";
 
 const Routes = createBrowserRouter([
   {
@@ -13,7 +14,8 @@ const Routes = createBrowserRouter([
     children:[
         {
             path: "/",
-            element: <Home></Home>
+            element: <Home></Home>,
+            loader: () => fetch(`../CustomAPI.json`) 
         },
         {
             path: "/donation",
@@ -22,6 +24,11 @@ const Routes = createBrowserRouter([
         {
             path: "/statistics",
             element: <StatisticsPage></StatisticsPage>
+        },
+        {
+            path: "/cardDetails/:id",
+            loader: () => fetch(`../CustomAPI.json`) ,
+            element: <CardDetails></CardDetails>
         }
     ]
   },
