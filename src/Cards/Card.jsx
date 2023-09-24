@@ -4,13 +4,13 @@ import { NavLink } from "react-router-dom";
 const Card = ({ cardData }) => {
   const {id,image, title, category, category_bg, card_bg, text_color, button_bg, description, price} = cardData || {}
 
-  
+  console.log(card_bg, category_bg , text_color, button_bg)
 
 
   return (
     <NavLink to={`/cardDetails/${id}`}>
             <div>
-      <div className="card card-compact rounded-lg bg-red-100">
+      <div className="card card-compact rounded-lg bg-[${}] bg-red-100">
         <figure>
           <img
           className="w-full rounded-sm"
