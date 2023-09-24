@@ -2,9 +2,9 @@ import PropTypes from "prop-types";
 import { NavLink } from "react-router-dom";
 
 const Card = ({ cardData }) => {
-  const {id,image, title, category, category_bg, card_bg, text_color, button_bg, description, price} = cardData || {}
+  const {id,image, title, category, category_bg, card_bg, text_color, button_bg} = cardData || {}
 
-  console.log(card_bg, category_bg , text_color, button_bg)
+//   console.log(card_bg, category_bg , text_color, button_bg)
 
 
   return (
