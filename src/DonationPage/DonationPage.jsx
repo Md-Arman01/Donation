@@ -32,7 +32,7 @@ const DonationPage = () => {
             }
             
             {
-                cards.length >= 4 &&
+                cards.length > 4 &&
             <div onClick={()=> setIsShow(!isShow)} className="flex justify-center my-7">
                 <button className="btn normal-case bg-[#009444] hover:bg-[#48a875] text-white w-40">{isShow? "See Less" : "See All"}</button>
             </div>
