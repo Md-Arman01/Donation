@@ -1,37 +1,26 @@
 import Pages from "../Pages/Pages";
-import logo from "../assets/Logo.png"
+import logo from "../assets/Logo.png";
 
 const Navber = () => {
-    return (
-        <div>
-            <div className="sticky z-50 container mx-auto my-10 flex justify-between items-center">
-  <div className="navbar-start">
-    <div className="dropdown">
-      <label tabIndex={0} className="btn btn-ghost lg:hidden">
-        <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
-      </label>
-      <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-        <li><a>Item 1</a></li>
-        <li>
-          <a>Parent</a>
-          <ul className="p-2">
-            <li><a>Submenu 1</a></li>
-            <li><a>Submenu 2</a></li>
-          </ul>
-        </li>
-        <li><a>Item 3</a></li>
-      </ul>
-    <img src={logo} alt="" />
-    </div>
-  </div>
-  <div className="navbar-center hidden lg:flex">
-    <ul className="menu menu-horizontal px-1">
-      <Pages></Pages>
-    </ul>
-  </div>
-</div>
+  return (
+    <div>
+      <div className="sticky z-50 container mx-auto my-10 flex justify-between items-center">
+        <div className="flex justify-center md:justify-start w-full">
+          <div className="flex flex-col md:flex-row md:items-center md:justify-between md:w-full gap-5 md:px-4">
+            <img src={logo} />
+            <div className="lg:hidden">
+              <Pages></Pages>
+            </div>
+          </div>
         </div>
-    );
+        <div className="navbar-center hidden lg:flex">
+          <ul className="menu menu-horizontal px-1">
+            <Pages></Pages>
+          </ul>
+        </div>
+      </div>
+    </div>
+  );
 };
 
 export default Navber;

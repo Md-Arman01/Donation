@@ -20,7 +20,7 @@ const DonationPage = () => {
 
 
     return (
-        <div className="container mx-auto my-20  ">
+        <div className="container mx-auto px-4 lg:px-0 md:my-20">
             {
                 noDonate? <p className="flex justify-center items-center h-[400px] text-3xl font-semibold">{noDonate}</p> : <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
                 {
