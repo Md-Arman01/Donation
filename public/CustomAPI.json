@@ -27,8 +27,8 @@
       "category": "Clothing",
       "category_bg": "#d4ecc2",
       "card_bg": "#ebf6e2",
-      "text_color": "#ebf6e2",
-      "button_bg": "#ebf6e2",
+      "text_color": "#79c23f",
+      "button_bg": "#79c23f",
       "description": "Clothing (also known as clothes, garments, dress, apparel, or attire) is any item worn on the body. Typically, clothing is made of fabrics or textiles, but over time it has included garments made from animal skin and other thin sheets of materials and natural products found in the environment, put together.",
       "price": 300.00
     },
@@ -60,8 +60,8 @@
         "category": "Clothing",
         "category_bg": "#d4ecc2",
         "card_bg": "#ebf6e2",
-        "text_color": "#ebf6e2",
-        "button_bg": "#ebf6e2",
+        "text_color": "#79c23f",
+        "button_bg": "#79c23f",
         "description": "Clothing (also known as clothes, garments, dress, apparel, or attire) is any item worn on the body. Typically, clothing is made of fabrics or textiles, but over time it has included garments made from animal skin and other thin sheets of materials and natural products found in the environment, put together.",
         "price": 300.00
       },
@@ -115,8 +115,8 @@
         "category": "Clothing",
         "category_bg": "#d4ecc2",
         "card_bg": "#ebf6e2",
-        "text_color": "#ebf6e2",
-        "button_bg": "#ebf6e2",
+        "text_color": "#79c23f",
+        "button_bg": "#79c23f",
         "description": "Clothing (also known as clothes, garments, dress, apparel, or attire) is any item worn on the body. Typically, clothing is made of fabrics or textiles, but over time it has included garments made from animal skin and other thin sheets of materials and natural products found in the environment, put together.",
         "price": 300.00
       },

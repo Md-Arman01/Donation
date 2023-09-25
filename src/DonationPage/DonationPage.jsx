@@ -17,7 +17,6 @@ const DonationPage = () => {
         }
     },[])
     
-    console.log(noDonate)
 
 
     return (

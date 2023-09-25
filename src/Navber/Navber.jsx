@@ -4,7 +4,7 @@ import logo from "../assets/Logo.png"
 const Navber = () => {
     return (
         <div>
-            <div className="container mx-auto my-10 flex justify-between items-center">
+            <div className="sticky z-50 container mx-auto my-10 flex justify-between items-center">
   <div className="navbar-start">
     <div className="dropdown">
       <label tabIndex={0} className="btn btn-ghost lg:hidden">

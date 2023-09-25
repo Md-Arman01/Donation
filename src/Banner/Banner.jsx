@@ -2,7 +2,7 @@ const Banner = () => {
   return (
     <div>
       <div
-        className="hero h-[700px] absolute top-0 -z-50"
+        className="hero h-[700px] absolute top-0 "
         style={{
           backgroundImage:
             "url(https://i.ibb.co/bJmwDSS/depositphotos-431561824-stock-photo-young-diverse-volunteer-group-smiling.jpg",
@@ -13,7 +13,7 @@ const Banner = () => {
             <h1 className="mb-10 text-5xl font-semibold text-black ">
               I Grow By Helping People In Need
             </h1>
-            <div className="form-control">
+            <div className="form-control ">
               <div className="input-group">
                 <input
                   type="text"

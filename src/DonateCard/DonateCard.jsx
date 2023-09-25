@@ -1,4 +1,5 @@
 import PropTypes from "prop-types"
+import { NavLink } from "react-router-dom";
 
 const DonateCard = ({card}) => {
     const {id,image, title, category, price,  category_bg, card_bg, text_color, button_bg} = card || {}
@@ -17,7 +18,9 @@ const DonateCard = ({card}) => {
   <h2 className='bg-red-200 text-red-500 text-xs w-fit px-2 py-1 rounded-md'>{category}</h2>
   <p className="text-xl font-semibold text-black">{title}</p>
     <p className="text-red-500">${price}.00</p>
+    <NavLink to={`/cardDetails/${id}`}>
     <button className="btn normal-case px-7">View Details</button>
+    </NavLink>
   </div>
 </div>
         </div>
