@@ -6,7 +6,7 @@ const DonateCard = ({card}) => {
 
     return (
         <div>
-            <div className="relative flex w-full  flex-row rounded-xl bg-white bg-clip-border text-gray-700 shadow-md">
+            <div  style={{background: card_bg}} className="relative flex w-full  flex-row rounded-xl bg-clip-border ">
   <div className="relative m-0 w-2/5 shrink-0 overflow-hidden rounded-xl rounded-r-none bg-white bg-clip-border text-gray-700">
     <img
       src={image}
@@ -14,12 +14,14 @@ const DonateCard = ({card}) => {
       className="h-full w-full object-cover"
     />
   </div>
-  <div className="p-6 space-y-1">
-  <h2 className='bg-red-200 text-red-500 text-xs w-fit px-2 py-1 rounded-md'>{category}</h2>
+  <div className="p-6">
+  <div className="space-y-1 mb-4">
+  <h2 style={{background: category_bg, color: text_color }} className=' text-red-500 text-xs w-fit px-2 py-1 rounded-md'>{category}</h2>
   <p className="text-xl font-semibold text-black">{title}</p>
-    <p className="text-red-500">${price}.00</p>
+  <p style={{color: text_color}} className="font-semibold">${price}.00</p>
+  </div>
     <NavLink to={`/cardDetails/${id}`}>
-    <button className="btn normal-case px-7">View Details</button>
+    <button style={{background: button_bg}} className="btn normal-case px-7 text-white">View Details</button>
     </NavLink>
   </div>
 </div>

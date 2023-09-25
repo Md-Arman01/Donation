@@ -8,7 +8,7 @@ const CardDetails = () => {
     const idInt = parseInt(id)
     const cardsDetails = useLoaderData()
     const cardDetails  = cardsDetails?.find(card => card.id === idInt)
-    const {image, title, description , price} = cardDetails || {}
+    const {image, title, description , price , button_bg} = cardDetails || {}
 
 
 
@@ -44,7 +44,7 @@ const CardDetails = () => {
             <img className="w-full rounded-3xl h-[700px]" src={image} alt="" />
             <p className="absolute bottom-0 bg-black w-full py-16 rounded-b-3xl opacity-50"></p>
             <div className="absolute bottom-10 left-10">
-            <button onClick={handleDonate} className=" btn normal-case bg-red-600 text-white px-6">Donate $ {price}</button>
+            <button onClick={handleDonate} style={{background: button_bg, border: button_bg }} className=" btn normal-case text-white px-6">Donate $ {price}</button>
             </div>
             </div>
             <h1 className="text-3xl font-extrabold mt-10">{title}</h1>
