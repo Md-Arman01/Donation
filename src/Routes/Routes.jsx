@@ -29,7 +29,8 @@ const Routes = createBrowserRouter([
             path: "/cardDetails/:id",
             loader: () => fetch(`../CustomAPI.json`) ,
             element: <CardDetails></CardDetails>
-        }
+        },
+
     ]
   },
 ]);

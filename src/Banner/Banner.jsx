@@ -1,6 +1,14 @@
+
+// import PropTypes from "prop-types"
+
 const Banner = () => {
+  
+
   return (
     <div>
+      <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 mt-[700px]">
+      
+      </div>
       <div
         className="hero h-[700px] absolute top-0 "
         style={{
@@ -14,16 +22,16 @@ const Banner = () => {
               I Grow By Helping People In Need
             </h1>
             <div className="form-control ">
-              <div className="input-group">
+              <form className="input-group">
                 <input
-                  type="text"
+                  type="search"
+                  name="search"
                   placeholder="Search here...."
-                  className="input input-bordered w-[450px]"
+                  className="input input-bordered w-[450px] text-black"
                 />
-                <button className="btn bg-[#FF444A] normal-case text-white  hover:bg-[#ff444ac7]">
-                Search
-                </button>
-              </div>
+                <input type="submit" value="Search" className="btn bg-[#FF444A] normal-case text-white  hover:bg-[#ff444ac7]"/>
+
+              </form>
             </div>
           </div>
         </div>
@@ -31,5 +39,8 @@ const Banner = () => {
     </div>
   );
 };
+Banner.propTypes ={
+  
+}
 
 export default Banner;

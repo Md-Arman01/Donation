@@ -19,16 +19,16 @@ const CardDetails = () => {
         if(!getCards){
             allCards.push(cardDetails)
             localStorage.setItem('card' , JSON.stringify(allCards))
-            swal("Goob Job", "Your imaginary file has been deleted!", "success");
+            swal("Donate Successfull", "Your card has been added donation page", "success");
         }else{
             const isExits = getCards.find(card => card.id === idInt)
             if(isExits){
-                swal("oopps", "Your imaginary file has been deleted!", "error");
-
+                swal("This card allready donated!", "You don't added this card", "error");
+                
             }else{
                 allCards.push(...getCards, cardDetails)
                 localStorage.setItem('card' , JSON.stringify(allCards))
-                swal("Goob Job", "Your imaginary file has been deleted!", "success");
+                swal("Donate Successfull", "Your card has been added donation page", "success");
             }
         }
         console.log(allCards)

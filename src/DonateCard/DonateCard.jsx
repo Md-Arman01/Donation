@@ -21,7 +21,7 @@ const DonateCard = ({card}) => {
   <p style={{color: text_color}} className="font-semibold">${price}.00</p>
   </div>
     <NavLink to={`/cardDetails/${id}`}>
-    <button style={{background: button_bg}} className="btn normal-case px-7 text-white">View Details</button>
+    <button style={{background: button_bg,}} className="btn normal-case px-7 text-white">View Details</button>
     </NavLink>
   </div>
 </div>
