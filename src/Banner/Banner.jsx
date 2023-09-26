@@ -1,7 +1,7 @@
 
 // import PropTypes from "prop-types"
 
-const Banner = () => {
+const Banner = ({handleSearch}) => {
   
 
   return (
@@ -22,7 +22,7 @@ const Banner = () => {
               I Grow By Helping People In Need
             </h1>
             <div className="form-control ">
-              <form className="input-group">
+              <form onSubmit={handleSearch} className="input-group">
                 <input
                   type="search"
                   name="search"
