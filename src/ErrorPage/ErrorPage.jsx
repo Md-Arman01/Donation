@@ -1,15 +1,25 @@
-
+import { useNavigate } from "react-router-dom";
 
 const ErrorPage = () => {
-    return (
-        <div className="h-screen flex justify-center items-center">
-            <div className="space-y-5 text-center">
-            <h1 className=" text-4xl font-bold">Oops!</h1>
-            <p className="font-medium">Sorry, an unexpected error has occurred</p>
-            <p className="italic text-gray-400">Not Found</p>
-            </div>
-        </div>
-    );
+  const navigate = useNavigate();
+    const backBtn = () =>{
+        navigate(-1)
+    }
+  return (
+    <div>
+      <img
+        className="relative w-full h-screen"
+        src="https://i.ibb.co/bdyqvhd/Screenshot-29.png"
+        alt=""
+      />
+      <button
+      onClick={backBtn}
+        className="absolute bottom-[120px] right-[390px] w-64 h-20 middle none center text-2xl rounded-lg bg-[#F6CA13] py-3 px-6 font-sans  font-semibold uppercase text-white shadow-md shadow-[#F6CA13]/20 transition-all hover:shadow-lg hover:shadow-[#F6CA13]/40   active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+        data-ripple-light="true">
+        Go Back
+      </button>
+    </div>
+  );
 };
 
 export default ErrorPage;

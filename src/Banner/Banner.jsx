@@ -13,12 +13,12 @@ const Banner = () => {
         className="hero h-[500px] md:h-[700px] absolute top-0 "
         style={{
           backgroundImage:
-            "url(https://i.ibb.co/bJmwDSS/depositphotos-431561824-stock-photo-young-diverse-volunteer-group-smiling.jpg",
+            "url(https://i.ibb.co/dJp8g6L/banner.jpg",
         }}>
         <div className="hero-overlay bg-white  bg-opacity-90"></div>
         <div className="hero-content text-center text-neutral-content">
-          <div className="flex flex-col items-center">
-            <h1 className="mb-2 md:mb-10 text-2xl md:text-4xl lg:text-5xl font-semibold text-black ">
+          <div className="flex flex-col items-center mt-32 md:mt-10">
+            <h1 className="mb-5  md:mb-10 text-2xl md:text-4xl lg:text-5xl font-semibold text-black ">
               I Grow By Helping People In Need
             </h1>
             <div className="form-control ">

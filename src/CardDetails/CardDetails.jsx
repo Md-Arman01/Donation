@@ -39,7 +39,7 @@ const CardDetails = () => {
 
 
     return (
-        <div className="container mx-auto my-10 px-4 lg:px-0">
+        <div className="container mx-auto my-20 px-4 lg:px-0">
             <div className="relative">
             <img className="w-full rounded-3xl md:h-[700px]" src={image} alt="" />
             <p className="absolute bottom-0 bg-black w-full py-10 md:py-16 rounded-b-3xl opacity-50"></p>
